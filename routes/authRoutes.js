@@ -70,7 +70,7 @@ router.get(
       res.cookie("token", token, { httpOnly: true });
 
       res.redirect(
-        `http://localhost:3000/auth/google/callback?accessToken=${accessToken}&refreshToken=${refreshToken}&token=${token}&id=${id}`
+        `https://gdrive-frontend.vercel.app/auth/google/callback?accessToken=${accessToken}&refreshToken=${refreshToken}&token=${token}&id=${id}`
       );
         } catch (error) {
       console.error("Error handling Google callback:", error);
